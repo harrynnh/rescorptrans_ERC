@@ -174,4 +174,5 @@ vignettes/*.pdf
 /notebook/
 /info/
 */download_prepare_data.py
-.DS*
+.RDataTmp
+.DS_Store

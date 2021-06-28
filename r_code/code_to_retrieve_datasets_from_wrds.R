@@ -13,7 +13,7 @@ wrds <- dbConnect(Postgres(),
                   port=9737,
                   dbname='wrds',
                   sslmode='require',
-                  user='harrynnh')
+                  user='username')
 
 
 #########################
@@ -88,8 +88,8 @@ if(!file.exists('data/ass3_sp500_constituents_with_daily_mdata.rds')){
 if(!file.exists('data/ass3_ibes_eps_forecasts.rds')){
   
   res <- dbSendQuery(wrds, paste0("select * from ibes.statsum_epsus 
-                            where fpedats >= '2019-01-01'
-                            and fpedats <= '2020-12-31'
+                            where fpedats >= '2018-01-01'
+                            and fpedats <= '2019-12-31'
                             and cusip in ( ",
                             paste(
                               paste0("'", unique(sp500$cusip), "'"),
@@ -137,7 +137,7 @@ if(!file.exists('data/ass3_cmp_fundamentals.rds')){
   # get fundamentals for observation where fiscal year is 2020 and gvkey
   # is in our s&p500 dataset
   res <- dbSendQuery(wrds, paste0("select ", var_str, " from comp.funda
-                            where fyear between 2019 and 2020 and gvkey in ( ",
+                            where fyear between 2018 and 2019 and gvkey in ( ",
                      paste(
                        paste0("'", unique(sp500$gvkey), "'"), 
                        collapse = " , "),
