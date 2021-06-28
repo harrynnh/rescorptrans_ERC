@@ -1,0 +1,111 @@
+variable_name,description,type
+cusip,cusip,char
+permno,permno,char
+permco,CRSP Permanent Company Number,char
+issuno,Nasdaq Issue Number (issuno),char
+hexcd,Header Exchange Code (hexcd),char
+hsiccd,Header SIC Code (hsiccd),char
+date,date of capital market data,date
+bidlo,Bid or Low (bidlo),num
+askhi,Ask or High (askhi),num
+prc,Price (prc),num
+vol,Share Volume (vol),num
+ret,Holding Period Return (ret),num
+bid,Closing Bid (bid),num
+ask,Closing Ask (ask),num
+shrout,Number of Shares Outstanding (shrout),num
+cfacpr,Cumulative Factor to Adjust Price (cfacpr),num
+cfacshr,Cumulative Factor to Adjust Shares (cfacshr),num
+openprc,Open Price (openprc),num
+numtrd,Number of Trades (numtrd),num
+retx,Return without Dividends (retx),num
+comnam,Company Name (comnam),char
+ncusip,Ncusip (ncusip),char
+namedt,Names Beginning Date (namedt),date
+nameendt,Names Ending Date (nameendt),date
+shrcd,Share Code (shrcd),num
+exchcd,Exchange Code (exchcd),char
+ticker,I/B/E/S Ticker (TICKER),char
+gvkey,GVKEY -- Global Company Key (GVKEY),char
+iid,Issue ID,char
+oftic,Official Ticker (OFTIC),char
+cname,Company Name (CNAME),char
+fpedats,Forecast Period End Date (FPEDATS),date
+statpers,IBES Statistical Period (STATPERS),date
+measure,measure that is estimated by analyst,char
+fiscalp,Periodicity (FISCALP),char
+fpi,Forecast Period Indicator (FPI),num
+estflag,Estimate Flag (ESTFLAG),char
+curcode,Currency Code (CURCODE),char
+numest,Number of Estimates (NUMEST),num
+numup,Number Up (NUMUP),num
+numdown,Number Down (NUMDOWN),num
+medest,Median Estimate (MEDEST),num
+meanest,Mean Estimate (MEANEST),num
+stdev,Standard Deviation (STDEV),num
+highest,High Estimate (HIGHEST),num
+lowest,Low Estimate (LOWEST),num
+usfirm,U.S. Firm (USFIRM=0 if from .INT and USFIRM=1 if from .US file) (USFIRM),num
+actual,Actual Value from the Detail Actuals File (ACTUAL),num
+anndats_act,Announce Date of the Actual from the Detail Actuals File (ANNDATS_ACT),date
+conm,Company Name (CONM),char
+cik,CIK Number (CIK),char
+fyear,fiscal year,num
+datadate,close of fiscal period,date
+indfmt,Industry Presentation Code,char
+sich,SICH -- Standard Industrial Classification - Historical (SICH),char
+consol,Level Consolidation Code,char
+popsrc,source of the data is domestic or international,char
+datafmt,code indicates how the data is collected and presented,char
+curcd,iso currency code,char
+fyr,Fiscal Year-End (FYR),date
+act,ACT -- Current Assets - Total (ACT),num
+ap,AP -- Accounts Payable - Trade (AP),num
+aqc,AQC -- Acquisitions (AQC),num
+aqs,AQS -- Acquisitions Sales Contribution (AQS),num
+acqsc,ACQSC -- Acquisitions - Current Sales Contribution (ACQSC),num
+at,AT -- Assets - Total (AT),num
+ceq,CEQ -- Common/Ordinary Equity - Total (CEQ),num
+che,CHE -- Cash and Short-Term Investments (CHE),num
+cogs,COGS -- Cost of Goods Sold (COGS),num
+csho,CSHO -- Common Shares Outstanding (CSHO),num
+dlc,DLC -- Debt in Current Liabilities - Total (DLC),num
+dp,DP -- Depreciation and Amortization (DP),num
+dpc,DPC -- Depreciation and Amortization (Cash Flow) (DPC),num
+dt,DT -- Total Debt Including Current (DT),num
+dvpd,DVPD -- Cash Dividends Paid (DVPD),num
+exchg,Stock Exchange Code (EXCHG),num
+gdwl,GDWL -- Goodwill (GDWL),num
+ib,IB -- Income Before Extraordinary Items (IB),num
+ibc,IBC -- Income Before Extraordinary Items (Cash Flow) (IBC),num
+intan,INTAN -- Intangible Assets - Total (INTAN),num
+invt,INVT -- Inventories - Total (INVT),num
+lct,LCT -- Current Liabilities - Total (LCT),num
+lt,LT -- Liabilities - Total (LT),num
+ni,NI -- Net Income (Loss) (NI),num
+capx,CAPX -- Capital Expenditures (CAPX),num
+oancf,OANCF -- Operating Activities Net Cash Flow (OANCF),num
+ivncf,IVNCF -- Investing Activities Net Cash Flow (IVNCF),num
+fincf,FINCF -- Financing Activities Net Cash Flow (FINCF),num
+oiadp,OIADP -- Operating Income After Depreciation (OIADP),num
+pi,PI -- Pretax Income (PI),num
+ppent,PPENT -- Property Plant and Equipment - Total (Net) (PPENT),num
+ppegt,PPEGT -- Property Plant and Equipment - Total (Gross) (PPEGT),num
+rectr,RECTR -- Receivables - Trade (RECTR),num
+sale,SALE -- Sales/Turnover (Net) (SALE),num
+seq,SEQ -- Stockholders' Equity - Total (SEQ),num
+txt,TXT -- Income Taxes - Total (TXT),num
+xint,XINT -- Interest and Related Expense - Total (XINT),num
+xsga,XSGA -- Selling General and Administrative Expense (XSGA),num
+costat,indicates whether the company is currently active or inactive on the Compustat database,num
+mkvalt,MKVALT -- Market Value - Total - Fiscal (MKVALT),num
+prcc_f,PRCC_F -- Price Close - Annual - Fiscal (PRCC_F),num
+recch,RECCH -- Accounts Receivable Decrease (Increase) (RECCH),num
+invch,INVCH -- Inventory Decrease (Increase) (INVCH),num
+apalch,APALCH -- Accounts Payable and Accrued Liabilities Increase/(Decrease) (APALCH),num
+txach,TXACH -- Income Taxes Accrued Increase/(Decrease) (TXACH),num
+aoloch,AOLOCH -- Assets and Liabilities Other Net Change (AOLOCH),num
+gdwlip,GDWLIP -- Impairments of Goodwill Pretax (GDWLIP),num
+spi,SPI -- Special Items (SPI),num
+wdp,WDP -- Writedowns Pretax (WDP),num
+rcp,RCP -- Restructuring Costs Pretax (RCP),num

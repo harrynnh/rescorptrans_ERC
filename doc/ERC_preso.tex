@@ -1,0 +1,91 @@
+% Created 2021-06-28 Mon 12:10
+% Intended LaTeX compiler: pdflatex
+\documentclass[bigger,allowframebreaks]{beamer}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{graphicx}
+\usepackage{grffile}
+\usepackage{longtable}
+\usepackage{wrapfig}
+\usepackage{rotating}
+\usepackage[normalem]{ulem}
+\usepackage{amsmath}
+\usepackage{textcomp}
+\usepackage{amssymb}
+\usepackage{capt-of}
+\usepackage{hyperref}
+\AtBeginSection[]{\begin{frame}<beamer>\frametitle{Topic}\tableofcontents[currentsection]\end{frame}}
+\institute[UM]{Maastricht University}
+\usetheme{metropolis}
+\usecolortheme{default}
+\author{Harry Nguyen}
+\date{\today}
+\title{ERC and cross sectional determinants}
+\hypersetup{
+ pdfauthor={Harry Nguyen},
+ pdftitle={ERC and cross sectional determinants},
+ pdfkeywords={},
+ pdfsubject={},
+ pdfcreator={Emacs 27.2 (Org mode 9.4.4)}, 
+ pdflang={English}}
+\begin{document}
+
+\maketitle
+\section{Estimating Earnings Response Coefficient (ERC)}
+\label{sec:org0c3c4ed}
+\begin{frame}[label={sec:org168aea2}]{Pooled regression}
+\begin{center}
+CAR\textsubscript{it} = \(\alpha\) + \(\beta\)*UE\textsubscript{it} + \(\epsilon\)\textsubscript{it}
+\end{center}
+\begin{center}
+\includegraphics[width=.9\linewidth]{/Users/harrynnh/workspace/misc/rescorptrans_ERC/output/erc_regplot.eps}
+\end{center}
+\end{frame}
+\begin{frame}[label={sec:org4992575},shrink=15]{Size and MTB as determinants}
+\begin{table}
+\caption{}
+\label{}
+\begin{center}
+\begin{tabular}{lll}
+\hline
+                         & Cum Ret  & Cum Ret    \\
+\hline
+Intercept                & 0.00     & 0.00       \\
+                         & (0.00)   & (0.02)     \\
+Earnings Surprise        & 0.02***  & 0.15**     \\
+                         & (0.00)   & (0.07)     \\
+Earnings Surprise * Size &          & -0.01**    \\
+                         &          & (0.01)     \\
+Earnings Surprise * MTB  &          & -0.00      \\
+                         &          & (0.00)     \\
+Size                     &          & 0.00       \\
+                         &          & (0.00)     \\
+MTB                      &          & 0.00       \\
+                         &          & (0.00)     \\
+R-squared                & 0.01     & 0.01       \\
+\hline
+\end{tabular}
+\end{center}
+\end{table}
+\end{frame}
+\begin{frame}[label={sec:orgadc35a5}]{Rolling vs. pooled ERC}
+\begin{center}
+\includegraphics[width=.9\linewidth]{/Users/harrynnh/workspace/misc/rescorptrans_ERC/output/erc_barplot.eps}
+\end{center}
+\end{frame}
+
+\begin{frame}[label={sec:org7963920}]{Firm specific rolling regression}
+\begin{center}
+\includegraphics[width=.9\linewidth]{/Users/harrynnh/workspace/misc/rescorptrans_ERC/output/erc_coef_dist.eps}
+\end{center}
+\end{frame}
+\section{Limitation}
+\label{sec:orge3e8ad5}
+\begin{frame}[label={sec:org410d8ec}]{Limitation}
+\begin{itemize}
+\item Cumulative returns instead of cumulative abnormal returns (CAR)
+\item Short time series.
+\item The pool regression doesn't capture the systematic relation between ERC and UE variances.
+\end{itemize}
+\end{frame}
+\end{document}

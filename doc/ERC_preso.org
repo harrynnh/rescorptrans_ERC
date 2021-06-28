@@ -1,0 +1,37 @@
+#+TITLE: ERC and cross sectional determinants
+#+AUTHOR: Harry Nguyen
+#+OPTIONS: H:2 toc:nil num:t
+#+LATEX_CLASS: beamer
+#+LaTeX_CLASS_options: [bigger,allowframebreaks]
+#+BEAMER_THEME: metropolis
+#+BEAMER_COLOR_THEME: default
+#+latex_header: \AtBeginSection[]{\begin{frame}<beamer>\frametitle{Topic}\tableofcontents[currentsection]\end{frame}}
+#+LaTeX_HEADER: \institute[UM]{Maastricht University}
+#+attr_latex: :width 75px
+#+attr_org: :width 75px
+* Estimating Earnings Response Coefficient (ERC)
+** Pooled regression
+#+begin_center
+CAR_it = \alpha + \beta*UE_it + \epsilon_it
+#+end_center
+[[~/workspace/misc/rescorptrans_ERC/output/erc_regplot.eps]]
+** Size and MTB as determinants
+:PROPERTIES:
+:BEAMER_opt: shrink=15
+:END:
+#+INCLUDE: "../output/erc_table.tex" export latex
+** Rolling vs. pooled ERC
+    :PROPERTIES:
+    :BEAMER_env: block
+    :BEAMER_col: 0.5
+    :END:
+[[~/workspace/misc/rescorptrans_ERC/output/erc_barplot.eps]]
+
+** Firm specific rolling regression
+[[~/workspace/misc/rescorptrans_ERC/output/erc_coef_dist.eps]]
+* Limitation
+** Limitation
+- Cumulative returns instead of cumulative abnormal returns (CAR)
+- Short time series.
+- The pooled regression doesn't capture the systematic relation between ERC and UE variances.
+
